@@ -183,11 +183,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\SpotifyServiceProvider::class,
-<<<<<<< HEAD
-        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class
-=======
         Webklex\GitHook\Providers\LaravelServiceProvider::class,
->>>>>>> frontend_vue_spa_rewrite
     ],
 
     /*

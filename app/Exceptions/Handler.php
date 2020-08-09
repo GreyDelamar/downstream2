@@ -2,11 +2,6 @@
 
 namespace App\Exceptions;
 
-<<<<<<< HEAD
-use Exception;
-use Throwable;
-=======
->>>>>>> frontend_vue_spa_rewrite
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
