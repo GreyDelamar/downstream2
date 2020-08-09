@@ -12,7 +12,7 @@
 import YouTubeCard from '@/components/YouTubeCard';
 
 export default {
-  name: 'Collection',
+  name: 'CollectionPage',
   components: {
     'youtube-card': YouTubeCard
   },
