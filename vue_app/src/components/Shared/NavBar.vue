@@ -12,7 +12,7 @@
 
     <v-autocomplete class="main-search" solo dense flat/>
 
-    <v-btn class="mr-2 ml-2" rounded text>
+    <v-btn class="mr-2 ml-2"  href="/activity" rounded text>
       Activity
       <v-badge content="6" class="ml-2 mr-2" color="#1E1E1E"></v-badge>
     </v-btn>
@@ -25,7 +25,7 @@
 
     <v-menu offset-y >
       <template v-slot:activator="{ on, attrs }">
-        <v-btn text v-bind="attrs" v-on="on" rounded>
+        <v-btn v-bind="attrs" v-on="on" rounded text>
           <v-icon>mdi-account</v-icon>
         </v-btn>
       </template>
@@ -34,10 +34,12 @@
           <v-icon class="pr-4">mdi-account-circle-outline</v-icon>
           <v-list-item-title>Profile</v-list-item-title>
         </v-list-item>
+
         <v-list-item>
           <v-icon class="pr-4">mdi-cog</v-icon>
           <v-list-item-title>Settings</v-list-item-title>
         </v-list-item>
+
         <v-list-item>
           <v-icon class="pr-4">mdi-logout</v-icon>
           <v-list-item-title>Logout</v-list-item-title>
