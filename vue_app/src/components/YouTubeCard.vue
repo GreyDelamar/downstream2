@@ -3,20 +3,20 @@
     class="mx-auto"
     max-width="580"
   >
-    <v-card-actions>
-      <v-btn text>Share</v-btn>
+    <v-card-actions v-if="share || collect">
+      <v-btn v-if="share" text>Share</v-btn>
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
-        <v-icon class="mr-1">mdi-heart</v-icon>
+      <v-btn v-if="collect" icon>
+        <v-icon>mdi-heart</v-icon>
       </v-btn>
     </v-card-actions>
 
     <v-img
         :id="this.cardId + '_media'"
         :src="thumbnailURL"
-        height="435px"
+        :height="dense ? '250px' : '435px'"
         v-show="showThumbnail"
         @click="handleThumbnailClick"
     ></v-img>
@@ -35,7 +35,19 @@
         name: 'YouTubeCard',
         props: {
             videoId: String,
-            thumbnailURL: String
+            thumbnailURL: String,
+            share: {
+                type: Boolean,
+                default: true
+            },
+            collect: {
+                type: Boolean,
+                default: true
+            },
+            dense: {
+                type: Boolean,
+                default: false
+            }
         },
         data() {
             return {

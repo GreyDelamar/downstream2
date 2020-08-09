@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Collection from '@/components/Pages/Collection.vue';
+import Activity from '@/components/Pages/Activity.vue';
 
 Vue.use(VueRouter)
 
@@ -14,6 +15,11 @@ const routes = [
     path: '/collection',
     name: 'Collection',
     component: Collection
+  },
+  {
+    path: '/activity',
+    name: 'Activity',
+    component: Activity
   },
   {
     path: '/about',
